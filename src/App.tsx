@@ -7,7 +7,7 @@ import { RecentWork } from './components/RecentWork';
 import './App.css';
 
 const navigation = {
-  brand: { name: 'NavbarScroller', to: '/' },
+  brand: { name: 'Miller Johnston', to: '/' },
   links: [
     { name: 'About Me', to: '/about' },
     { name: 'Technologies', to: '/technologies' },

@@ -1,18 +1,51 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
+//import { NavLink } from 'react-router-dom';
+import '../styles/navbar.css'
 
 export const Navbar = (props: {
   brand: { name: string; to: string };
   links: Array<{ name: string; to: string }>;
 }) => {
+  
   const { brand, links } = props;
-  const NavLinkMapper = (): Array<JSX.Element> => links.map((link: { name: string, to: string }, index: number) => <NavLink to={link.to} key={index}>{link.name}</NavLink>);
-  const mappedLinks: Array<JSX.Element> = NavLinkMapper();
+  const NavLinkMapper = (): Array<JSX.Element> => links.map((link) => <li key={link.name}><a href={link.to}>{link.name}</a></li>);
+  const mappedLinks = NavLinkMapper();
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <nav>
-      <a href={brand.to}>{brand.name}</a>
-      {mappedLinks}
+    <nav className="navigation">
+      <a href="/" className="brand-name">
+        {brand.name}
+      </a>
+      <button
+        className="hamburger"
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+      >
+        {/* icon from Heroicons.com */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="white"
+        >
+          <path
+            fillRule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          {mappedLinks}
+        </ul>
+      </div>
     </nav>
   );
-};
+}; 
