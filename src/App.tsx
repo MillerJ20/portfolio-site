@@ -5,6 +5,7 @@ import { About } from './components/About';
 import { Technologies } from './components/Technologies';
 import { RecentWork } from './components/RecentWork';
 import './App.css';
+import React, { useCallback, useEffect, useState } from 'react';
 
 const navigation = {
   brand: { name: 'Miller Johnston', to: '/' },
@@ -16,16 +17,26 @@ const navigation = {
 };
 
 function App() {
+  const [title, setTitle] = useState('Miller J');
+
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+
+  const changeTitle = useCallback((newTitle: string): void => {
+    setTitle(newTitle);
+  }, [title]);
+
   const { brand, links } = navigation;
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar brand={brand} links={links} />
         <Routes>
-          <Route path={brand.to} element={<LandingPage/>} />
-          <Route path='/about' element={<About/>}/>
-          <Route path='technologies' element={<Technologies/>}/>
-          <Route path='recentWork' element={<RecentWork/>}/>
+          <Route path={brand.to} element={<LandingPage />} />
+          <Route path="/about" element={<About changeTitle={changeTitle}/>} />
+          <Route path="technologies" element={<Technologies changeTitle={changeTitle}/>} />
+          <Route path="recentWork" element={<RecentWork changeTitle={changeTitle}/>} />
         </Routes>
       </BrowserRouter>
     </div>

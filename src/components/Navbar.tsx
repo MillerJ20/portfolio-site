@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 //import { NavLink } from 'react-router-dom';
-import '../styles/navbar.css'
+import '../styles/navbar.css';
 
 export const Navbar = (props: {
   brand: { name: string; to: string };
   links: Array<{ name: string; to: string }>;
 }) => {
-  
+
   const { brand, links } = props;
-  const NavLinkMapper = (): Array<JSX.Element> => links.map((link) => <li key={link.name}><a href={link.to}>{link.name}</a></li>);
+  const NavLinkMapper = (): Array<JSX.Element> =>
+    links.map((link) => (
+      <li key={link.name}>
+        <a href={link.to}>{link.name}</a>
+      </li>
+    ));
   const mappedLinks = NavLinkMapper();
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
@@ -23,7 +28,6 @@ export const Navbar = (props: {
           setIsNavExpanded(!isNavExpanded);
         }}
       >
-        {/* icon from Heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -39,13 +43,11 @@ export const Navbar = (props: {
       </button>
       <div
         className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
         }
       >
-        <ul>
-          {mappedLinks}
-        </ul>
+        <ul>{mappedLinks}</ul>
       </div>
     </nav>
   );
-}; 
+};
