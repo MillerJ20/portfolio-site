@@ -35,6 +35,7 @@ ul li::marker{
 
 li{
   list-style-position: inside;
+  font-size: 1rem;
 }
 
 /*
@@ -140,10 +141,9 @@ Navbar Styling:
 Landing Page styling
 */
 .landing-headshot {
-  background-image: url('./images/headShot.JPG');
   background-size: 200px;
-  height: 280px;
-  width: 200px;
+  height: auto;
+  max-width: 280px;
   /* margin-left: 5em; */
   margin-left: auto;
   margin-right: auto;

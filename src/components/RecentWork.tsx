@@ -15,7 +15,7 @@ export const RecentWork = (props: {
             <li>Loves drum breaks</li>
             <li>Indie Game Development</li>
             <li>Dragon Quest enthusiast</li>
-            <li>Frontend Engineer</li>
+            <li>On a quest for the next best frontend framework</li>
             </ul>
         </div>
       </div>
