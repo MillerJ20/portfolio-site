@@ -29,6 +29,7 @@ body {
 article h1 {
   margin: 1rem 0;
 }
+
 ul li::marker{
   color: coral;
 }
@@ -86,7 +87,7 @@ Navbar Styling:
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #283b8b;
+  background-color: #000000;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -97,7 +98,7 @@ Navbar Styling:
 }
 
 .hamburger:hover {
-  background-color: #2642af;
+  background-color: #4e4e4e;
 }
 
 @media screen and (max-width: 550px) {

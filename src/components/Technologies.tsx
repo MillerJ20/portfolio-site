@@ -1,10 +1,6 @@
 import React from 'react';
 
-export const Technologies = (props: {
-  changeTitle: (newTitle: string) => void;
-}) => {
-  const { changeTitle } = props;
-  changeTitle("Technologies");
+export const Technologies = () => {
   return (
     <div className='technologies'>
       <h2 className='technologies-header'>My favorite technologies!</h2>

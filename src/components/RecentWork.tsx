@@ -1,10 +1,6 @@
 import React from 'react';
 
-export const RecentWork = (props: {
-  changeTitle: (newTitle: string) => void;
-}) => {
-  const { changeTitle } = props;
-  changeTitle("Recent Work");
+export const RecentWork = () => {
   return (
     <div className='recentWork'>
       <h2 className='recentWork-header'>I'm Miller!</h2>
