@@ -3,7 +3,8 @@ import { About } from './About'
 import { RecentWork } from './RecentWork';
 import { Technologies } from './Technologies';
 import swirl from '../assets/paint-swirl.jpg';
-import house from '../assets/house.jpg';
+import blue from '../assets/blue.jpg';
+import intoBlue from '../assets/into-blue.jpg';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 
@@ -11,27 +12,43 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 export const LandingPage = () => {
   return (
     <div className='landing'>
-      <Parallax pages={2}>
-        //first page
+      <Parallax pages={3}>
+
+        {/*first page layer */}
         <ParallaxLayer 
-          speed={1}
+          speed={0.5}
+          factor={1.5}
           style={{
             backgroundImage: `url(${swirl})`,
             backgroundSize: 'cover'
           }}>
         </ParallaxLayer>
-        //second page
+
+        {/*second page layer */}
         <ParallaxLayer 
           offset={1}
-          speed={0.8}
+          speed={0.5}
+          factor={1.5}
           style={{
-            backgroundImage: `url(${house})`,
+            backgroundImage: `url(${intoBlue})`,
             backgroundSize: 'cover'
           }}>
         </ParallaxLayer>
-        //About section
+
+        {/*third page layer */}
         <ParallaxLayer 
+          offset={2}
+          speed={0.5}
+          style={{
+            backgroundImage: `url(${blue})`,
+            backgroundSize: 'cover'
+          }}>
+        </ParallaxLayer>
+
+        {/*About layer */}
+        <ParallaxLayer  
           speed={1}
+          factor={1}
           style={{
             backgroundColor: '#c27ba0',
             maxHeight: '15%',
@@ -41,11 +58,15 @@ export const LandingPage = () => {
             padding: '25px',
             marginTop: '20px',
             marginLeft: '60%'
-        }}>
-          <About />
+          }}>
+            <About />
         </ParallaxLayer>
-        //Recent Work section
-        <ParallaxLayer 
+
+        {/*RecentWork layer */}
+        <ParallaxLayer  
+          offset={0.5}
+          speed={1}
+          factor={1}
           style={{
             backgroundColor: '#c27ba0',
             maxHeight: '15%',
@@ -54,13 +75,15 @@ export const LandingPage = () => {
             opacity: '0.85',
             padding: '25px',
             margin: 'auto'
-        }}>
-          <RecentWork />
+          }}>
+            <RecentWork />
         </ParallaxLayer>
-        //Technologies section
+
+        {/*Technologies layer */}
         <ParallaxLayer 
-          offset={1}
+          offset={2} 
           speed={1}
+          factor={1}
           style={{
             backgroundColor: '#c27ba0',
             maxHeight: '15%',
@@ -68,8 +91,8 @@ export const LandingPage = () => {
             borderRadius: "20px",
             opacity: '0.85',
             padding: '25px',
-        }}>
-          <Technologies />
+          }}>
+            <Technologies />
         </ParallaxLayer>
       </Parallax>
     </div>
