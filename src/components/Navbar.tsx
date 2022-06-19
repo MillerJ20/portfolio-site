@@ -5,7 +5,6 @@ export const Navbar = (props: {
   brand: { name: string; to: string };
   links: Array<{ name: string; to: string }>;
 }) => {
-
   const { brand, links } = props;
   const NavLinkMapper = (): Array<JSX.Element> =>
     links.map((link) => (

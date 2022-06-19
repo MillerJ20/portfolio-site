@@ -50,7 +50,7 @@ Navbar Styling:
   height: 60px;
   width: 100%;
   padding: 0.5rem 0rem;
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to bottom right, #4b69ee, #fcb3dd);
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
@@ -138,18 +138,38 @@ Navbar Styling:
     display: block;
   }
 }
+/* Technologies Component */
+.tech {
+  margin-top: 1.5em;
+}
+.tech-header {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.tech-content {
+  border-top: solid 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 
-/*
-Landing Page styling
-*/
-.landing-headshot {
-  background-size: 200px;
-  height: auto;
-  max-width: 280px;
-  /* margin-left: 5em; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 0px;
+/* HOLDS THE 4 SECTIONS */
+.tech-container-content {
+  display: flex;
+}
+
+.react-icon {
+  height: 65px;
+  align-items: center;
+  margin: auto;
+}
+.redux-icon {
+  height: 60px;
+  align-items: center;
+  margin: auto;
+}
+.svelte-icon {
+  height: 60px;
+  margin: auto;
 }

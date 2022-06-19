@@ -4,13 +4,12 @@ import { LandingPage } from './components/LandingPage';
 import './App.css';
 import React, { useEffect, useState } from 'react';
 
-
 const navigation = {
-  brand: { name: 'Miller Johnston', to: '/' },
+  brand: { name: 'Miller Johnston | Software Engineer', to: '/' },
   links: [
-    { name: 'About Me', to: '/about' },
-    { name: 'Technologies', to: '/technologies' },
-    { name: 'Recent Work', to: '/recentWork' },
+    { name: 'LinkedIn', to: '/myLinkedInEventually' },
+    { name: 'GitHub', to: '/technologies' },
+    { name: 'Resume', to: '/recentWork' }
   ]
 };
 

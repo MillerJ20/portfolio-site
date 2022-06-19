@@ -1,98 +1,117 @@
 import React from 'react';
-import { About } from './About'
+import { About } from './About';
 import { RecentWork } from './RecentWork';
 import { Technologies } from './Technologies';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import swirl from '../assets/paint-swirl.jpg';
 import blue from '../assets/blue.jpg';
 import intoBlue from '../assets/into-blue.jpg';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-
-
+import me from '../assets/me.jpg';
 
 export const LandingPage = () => {
   return (
-    <div className='landing'>
+    <div className="landing">
       <Parallax pages={3}>
-
         {/*first page layer */}
-        <ParallaxLayer 
-          speed={0.5}
+        <ParallaxLayer
+          speed={0.3}
           factor={1.5}
           style={{
             backgroundImage: `url(${swirl})`,
             backgroundSize: 'cover'
-          }}>
-        </ParallaxLayer>
+          }}
+        ></ParallaxLayer>
 
         {/*second page layer */}
-        <ParallaxLayer 
+        <ParallaxLayer
           offset={1}
-          speed={0.5}
+          speed={0.3}
           factor={1.5}
           style={{
             backgroundImage: `url(${intoBlue})`,
             backgroundSize: 'cover'
-          }}>
-        </ParallaxLayer>
+          }}
+        ></ParallaxLayer>
 
         {/*third page layer */}
-        <ParallaxLayer 
+        <ParallaxLayer
           offset={2}
-          speed={0.5}
+          speed={0.3}
           style={{
             backgroundImage: `url(${blue})`,
             backgroundSize: 'cover'
-          }}>
-        </ParallaxLayer>
+          }}
+        ></ParallaxLayer>
 
         {/*About layer */}
-        <ParallaxLayer  
+        <ParallaxLayer
           speed={1}
           factor={1}
           style={{
-            backgroundColor: '#c27ba0',
+            backgroundColor: '#fcb3dd',
             maxHeight: '15%',
             maxWidth: '35%',
-            borderRadius: "20px",
-            opacity: '0.85',
+            borderRadius: '20px',
+            opacity: '0.9',
             padding: '25px',
+            marginTop: '5%',
+            marginLeft: '45%'
+          }}
+        >
+          <About />
+        </ParallaxLayer>
+
+        {/* it's me! */}
+        <ParallaxLayer
+          speed={.25}
+          factor={0.75}
+          style={{
+            backgroundImage: `url(${me})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            borderRadius: '50px',
+            height: '30%',
+            width: '40%',
             marginTop: '20px',
-            marginLeft: '60%'
-          }}>
-            <About />
+            marginLeft: '2.5%'
+          }}
+        >
         </ParallaxLayer>
 
         {/*RecentWork layer */}
-        <ParallaxLayer  
-          offset={0.5}
+        <ParallaxLayer
+          offset={0.75}
           speed={1}
           factor={1}
           style={{
-            backgroundColor: '#c27ba0',
+            backgroundImage: 'linear-gradient(#fcb3dd, #0000FF)',
             maxHeight: '15%',
             maxWidth: '35%',
-            borderRadius: "20px",
+            borderRadius: '20px',
             opacity: '0.85',
             padding: '25px',
             margin: 'auto'
-          }}>
-            <RecentWork />
+          }}
+        >
+          <RecentWork />
         </ParallaxLayer>
 
         {/*Technologies layer */}
-        <ParallaxLayer 
-          offset={2} 
+        <ParallaxLayer
+          offset={2}
           speed={1}
           factor={1}
           style={{
-            backgroundColor: '#c27ba0',
+            backgroundColor: 'rgb(75, 105, 238)',
             maxHeight: '15%',
             maxWidth: '35%',
-            borderRadius: "20px",
-            opacity: '0.85',
+            borderRadius: '20px',
+            opacity: '0.90',
             padding: '25px',
-          }}>
-            <Technologies />
+            marginLeft: '2.5%'
+          }}
+        >
+          <Technologies />
         </ParallaxLayer>
       </Parallax>
     </div>
