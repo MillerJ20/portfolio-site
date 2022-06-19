@@ -3,10 +3,8 @@ import React from 'react';
 export const RecentWork = () => {
   return (
     <div className='recentWork'>
-      <h2 className='recentWork-header'>I'm Miller!</h2>
       <div className='recentWork-content'>
         <div className='recentWork-content-container'>
-          <h2 className='recentWork-content-header'>Software Engineer</h2>
             <ul>
             <li>Loves drum breaks</li>
             <li>Indie Game Development</li>
