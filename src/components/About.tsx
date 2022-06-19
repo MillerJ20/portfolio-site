@@ -1,14 +1,10 @@
 import React from 'react';
-import me from '../assets/headShot.JPG'
 
 export const About = () => {
   return (
     <div className='about'>
-      <h2 className='about-header'>I'm Miller!</h2>
-      <img src={me} className='landing-headshot'/>
       <div className='about-content'>
         <div className='about-content-container'>
-          <h2 className='about-content-header'>Software Engineer</h2>
           <ul>
             <li>Frontend Engineer that specializes in modern Javascript frameworks/libraries</li>
             <li>Loves drum breaks/fills/solos</li>

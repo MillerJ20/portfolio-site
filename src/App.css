@@ -12,8 +12,8 @@
 }
 
 body {
-  font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,11 +30,11 @@ article h1 {
   margin: 1rem 0;
 }
 
-ul li::marker{
+ul li::marker {
   color: coral;
 }
 
-li{
+li {
   list-style-position: inside;
   font-size: 1rem;
 }
