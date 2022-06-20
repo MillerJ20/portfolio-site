@@ -12,7 +12,7 @@ export const LandingPage = () => {
   return (
     <div className="landing">
       <Parallax pages={3}>
-        {/*first page layer */}
+        {/*first page layer*/} 
         <ParallaxLayer
           speed={0.3}
           factor={1.5}
