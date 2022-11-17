@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import { LandingPage } from './components/LandingPage';
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import resume from './assets/Miller Johnston SWE Resume.pdf'
+import resume from './assets/Miller Johnston SWE Resume(B).pdf'
 
 const navigation = {
   brand: { name: 'Miller Johnston | Software Engineer', to: '/' },
