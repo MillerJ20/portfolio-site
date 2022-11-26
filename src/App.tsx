@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
+import { Menu } from './components/Menu';
 import { LandingPage } from './components/LandingPage';
 import './App.css';
 import React, { useEffect, useState } from 'react';
@@ -26,10 +27,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar brand={brand} links={links} />
-        <Routes>
-          <Route path={brand.to} element={<LandingPage />} />
-        </Routes>
+        <Menu links={links} />
       </BrowserRouter>
     </div>
   );
