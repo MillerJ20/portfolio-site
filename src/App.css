@@ -33,45 +33,57 @@ body {
   display: block;
   text-decoration: none;
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-  transition: opacity 400ms ease;
+  transition: color 400ms ease;
 }
 
 #menu-items {
-  margin-left: clamp(4rem, 15vw, 48rem);
+  margin-left: clamp(5rem, 15vw, 48rem);
   position: relative;
   z-index: 2;
 }
 
 #menu-items:hover > .menu-item {
-  opacity: 0.3;
+  color: gray
 }
 
 #menu-items:hover > .menu-item:hover {
+  color: white;
   opacity: 1;
-  text-shadow: 0px 0px 8px #5f5f5f;
+  text-shadow: 0px 0px 10px #7a7a7a;
 }
 
 #menu-background-pattern {
-  background-image: radial-gradient(
-    rgba(255, 255, 255, 0.1) 9%, 
-    transparent 9%
-  );
-  background-position: 0% 0%;
-  background-size: 12vmin 12vmin;
+  border-radius: 20vmin;
+  opacity: 1;
+  background-color: rgb(21, 21, 21);
+  background-position: 0px 10px, 0% 0%, 0% 0%; 
+  background-repeat: repeat, repeat, repeat; 
+  background-attachment: scroll, scroll, scroll; 
+  background-image: radial-gradient(circle at 0% 0%, rgba(96, 16, 48, 0) 9px, rgb(95, 35, 205) 10px, rgba(96, 16, 48, 0) 11px),
+   radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, rgb(85, 24, 121) 10px, rgba(96, 16, 48, 0) 11px), 
+   radial-gradient(circle at 0% 100%, rgba(70, 70, 70, 0) 9px, rgb(00, 00, 00) 10px, rgba(70, 70, 70, 0) 11px), 
+   radial-gradient(circle at 100% 0%, rgba(70, 70, 70, 0) 9px, rgb(00, 00, 00) 10px, rgba(70, 70, 70, 0) 11px); 
+  background-origin: padding-box, padding-box, padding-box; 
+  background-clip: border-box, border-box, border-box; 
+  background-size: 20px 20px;
+  
   height: 100vh;
-  left: 0px;
+  left: 15vmin;
   position: absolute;
   top: 0px;
+  width: 35vw;
+  z-index: 1;
+  
   transition: opacity 800ms ease, 
     background-size 800ms ease,
-    background-position 800ms ease;
-  width: 100vw;
-  z-index: 1;
+    border-radius 800ms ease,
+    background-position 800ms ease, 
 }
 
 #menu-items:hover ~ #menu-background-pattern {
-  background-size: 11vmin 11vmin;
-  opacity: 0.5;
+  border-radius: 10vmin;
+  background-size: 3vmin 3vmin;
+  opacity: 0.7;
 } 
 
 #menu > #menu-background-pattern {
