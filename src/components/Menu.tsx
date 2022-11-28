@@ -15,7 +15,8 @@ export const Menu = (props: {
       <div id='menu-items'>
         {mappedLinks}
       </div>
-      <div id='menu-background-pattern'></div>
+      <div id='menu-background-pattern' className='left'></div>
+      <div id='menu-background-pattern' className='right'></div>
     </div>
   )
 }

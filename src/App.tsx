@@ -12,7 +12,9 @@ const navigation = {
     { name: 'LinkedIn', to: 'https://www.linkedin.com/in/miller-johnston/' },
     { name: 'GitHub', to: 'https://github.com/MillerJ20' },
     { name: 'Resume', to: `${resume}` }, 
-    { name: 'Email', to: 'mailto: miller.johnston17@gmail.com'}
+    { name: 'Email', to: 'mailto: miller.johnston17@gmail.com'},
+    { name: 'About', to: '/About'},
+    { name: 'Blog', to: '/Blog'},
   ]
 };
 
