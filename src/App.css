@@ -13,6 +13,16 @@ body {
   margin: 0px;
 }
 
+.header {
+  position: absolute;
+  left: 18vw;
+  top: clamp(5vh, 8vh, 10vh);
+  color: white;
+  width:fit-content;
+  font-size: clamp(1rem, 1vw, 5rem);
+  text-decoration: underline;
+}
+
 #menu {
   height: 100vh;
   display: flex;
@@ -100,6 +110,7 @@ body {
 #menu > #menu-background-pattern {
   background-position: 0% calc(-10% * (var(--active-index)));
 }
+
 /* Technologies Component 
 .tech {
   margin-top: 1.5em;
