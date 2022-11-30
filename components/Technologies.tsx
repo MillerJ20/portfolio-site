@@ -1,6 +1,6 @@
-import redux from '../public/reduxLogo.png';
-import react from '../public/reactLogo.png';
-import svelte from '../public/svelteLogo.svg'
+import redux from '../public/images/reduxLogo.png';
+import react from '../public/images/reactLogo.png';
+import svelte from '../public/images/svelteLogo.svg'
 
 import Image from 'next/image';
 export const Technologies = () => {
