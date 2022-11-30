@@ -2,14 +2,97 @@
   font-family: GarrickBold;
   src: url(../public/Garrick\ Bold.ttf);
 }
+
 :root{
   --active-index: 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 75vh;
+}
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-back {
+  background: #f4f4f4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-page {
+  padding: 15px 30px;
+}
+
+.post-title {
+  margin: 10px 0;
+}
+
+.post-date {
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+}
+
+.post-body ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-body pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(25, 25, 25);
+  
   margin: 0px;
 }
 
@@ -23,13 +106,6 @@ body {
   text-decoration: underline;
 }
 
-.container {
-  max-width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1rem;
-}
-
 article h1 {
   margin: 1rem 0;
 }
@@ -38,29 +114,30 @@ article h1 {
   height: 100vh;
   display: flex;
   align-items: center;
+  background-color: rgb(25, 25, 25);
 }
 
 .menu-item {
   color: white;
-  font-size: clamp(2rem, 7vw, 7rem);
+  font-size: clamp(1.5rem, 6vw, 5.5rem);
   font-family: 'GarrickBold', monospace;
 
   display: block;
   text-decoration: none;
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   transition: color 400ms ease;
+  width: fit-content;
+  max-width: 100%;
 }
 
 #menu-items {
-  position: relative;
   z-index: 2;
-
   display: grid;
-  grid-template-columns: 90% 90%;
-  /* column-gap: clamp(20%, 40%, 65%); */
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  column-gap: 35%;
   row-gap: 20px;
-  left: 18vw;
-  right: 18vw;
+  margin: auto;
 }
 
 #menu-items:hover > .menu-item {

@@ -13,7 +13,7 @@ export const RecentWork = () => {
             SvelteStorm also includes a BrowserWindow to display client views while working on an application, a fully-featured code editor including bracket pairing and syntax highlighting using CodeMirror, and 
             a functional terminal utilizing XTerm. <br />
             <br />
-            You can visit svelte-storm.com to learn more about the tool, or visit my GitHub page to see the code for yourself!
+            You can visit <a href='https://svelte-storm.com'>svelte-storm.com</a> to learn more about the tool, or visit my GitHub page to see the code for yourself!
           </p>
         </div>
       </div>

@@ -9,8 +9,8 @@ const navigation = {
     { name: 'GitHub', to: 'https://github.com/MillerJ20' },
     { name: 'Resume', to: '/assets/Miller Johnston SWE Resume(B).pdf'}, 
     { name: 'Email', to: 'mailto: miller.johnston17@gmail.com'},
-    { name: 'About', to: '/About'},
-    { name: 'Blog', to: '/Blog'},
+    { name: 'About Me', to: '/About'},
+    { name: 'Blog Posts', to: '/BlogList'},
   ]
 };
 

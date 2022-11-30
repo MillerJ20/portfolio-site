@@ -1,5 +1,6 @@
 import { Technologies } from "../components/Technologies";
 import { AboutMe } from "../components/AboutMe";
+import { RecentWork } from "../components/RecentWork";
 
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
     <div className="about-container">
       <AboutMe />
       <Technologies />
+      <RecentWork />
     </div>
   )
 }
