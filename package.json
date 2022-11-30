@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "next start",
-    "build": "next build && next export",
+    "build": "next build",
     "dev": "next dev",
     "lint": "eslint . --ext .tsx",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.tsx' --write"
