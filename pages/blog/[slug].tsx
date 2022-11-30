@@ -15,7 +15,7 @@ export default function PostPage({
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' height='256' width='500px'/>
+        <img src={cover_image} alt='' />
         <div className='post-body'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
