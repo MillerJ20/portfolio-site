@@ -11,8 +11,8 @@ export default function PostPage({
 }) {
   return (
     <>
-      <Link href='/BlogList' className='btn btn-back'>Go Back</Link>
-      <div className='card card-page'>
+      <div className='card-page'>
+      <Link href='/BlogList' className='btn'>Go Back</Link>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
         <img src={cover_image} alt='' />
