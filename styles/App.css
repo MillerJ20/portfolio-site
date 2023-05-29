@@ -215,12 +215,17 @@ article h1 {
 
 .about-container {
   margin: auto;
+  padding: 20px;
+
   font-family: 'GarrickBold', monospace;
   user-select: none;
   text-shadow: 0px 0px 2px #444444;
   text-decoration: none;
-  color: white;
-  width: 50%;
+  color: black;
+  text: black;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
 }
 
 /* Technologies Component */
