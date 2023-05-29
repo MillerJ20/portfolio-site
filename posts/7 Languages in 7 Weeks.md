@@ -2,7 +2,7 @@
 title: '7 Languages in 7 Weeks'
 date: 'May 29 2023'
 excerpt: 'The beginning of my journey to expand the languages under my belt'
-cover_image: '/images/posts/btlang.PNG'
+cover_image: '/images/posts/btlang.jpg'
 ---
 
 As I have been at my job for a while now, I have been trying to kickstart my learning outside of work. The onboarding process is mostly completed (it is an everlasting undertaking), so my mental capacity has been refilled. I have been trying to read more books, as now that I have professional experience, many of the concepts I once felt like I missed now have real life contexts I can pull from. 
