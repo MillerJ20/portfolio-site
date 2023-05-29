@@ -60,12 +60,12 @@ img {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: gray;
+  background-color: rgb(129,133,137);
 }
 
 .card-page {
   padding: 15px 30px;
-  background-color: gray;
+  background-color: rgb(129,133,137);
 }
 
 .post-title {
@@ -76,7 +76,7 @@ img {
   background: #f4f4f4;
   margin-bottom: 20px;
   padding: 3px 10px;
-  background-color: gray;
+  background-color: rgb(129,133,137);
 }
 
 .post-body ul,
@@ -92,7 +92,13 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-body {
+  border-radius: 10px;
+  background-color: rgb(155,155,155);
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 body {
