@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Post from '../components/Post'
+import Link from "next/link";
 
 type Post = {
   slug: string,
@@ -17,7 +18,8 @@ type Post = {
 const BlogList = ({ posts }) => {
   return (
     <div className="container">
-      <Head>
+        <Link href="/" className="btn">Home</Link>
+        <Head>
         <title>List</title>
       </Head>
 
