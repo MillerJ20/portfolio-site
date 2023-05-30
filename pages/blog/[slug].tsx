@@ -15,7 +15,7 @@ export default function PostPage({
       <Link href='/BlogList' className='btn'>Go Back</Link>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
+        <img className='img' src={cover_image} alt='' />
         <div className='post-body'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
