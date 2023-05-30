@@ -11,7 +11,7 @@ img {
   width: 100%;
   border-radius: 10px;
   height: auto;
-  max-height: 100vh;
+  max-height: 65%;
 }
 
 .container {
@@ -21,6 +21,10 @@ img {
   overflow: auto;
   padding: 0 10px;
   background-color: rgb(25, 25, 25);
+}
+
+html {
+  font-size: 1em;
 }
 
 .btn {
@@ -43,7 +47,7 @@ img {
 }
 
 .btn:hover {
-  transform: scale(120%);
+  transform: scale(110%);
   filter: invert(100%)
 }
 
@@ -53,19 +57,27 @@ img {
   margin-bottom: 20px;
 }
 
+#post-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
 .posts {
   display: grid;
   grid-template-columns: repeat(3, 32%);
-  grid-template-rows: repeat(10, 35%);
-  gap: 25px;
-  margin-top: 30px;
+  grid-template-rows: repeat(auto-fill, 30%);
+  gap: 5vh 1vw;
+  margin-top: 1vh;
 }
 
 .card {
+  position: relative;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: rgb(129,133,137);
+  max-height: 75vh;
 }
 
 .card-page {
@@ -78,10 +90,24 @@ img {
 }
 
 .post-date {
-  background: #f4f4f4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
   background-color: rgb(129,133,137);
+  margin: 10px 0px;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 28%
+}
+
+.card-date {
+  position:absolute;
+  bottom: 26%;
+  background-color: rgb(129, 133, 137);
+}
+
+.card-excerpt {
+  position: absolute;
+  bottom: 10%
 }
 
 .post-body ul,
