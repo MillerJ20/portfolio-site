@@ -5,12 +5,9 @@ const Search = ({ posts, updatePosts }) => {
 
   const handleChange = (event) => {
     const { value } = event.target;
-    setInputValue(value);
+    if (!value) updatePosts(posts);
 
-    if (inputValue == '') {
-      updatePosts(posts);
-      return;
-    }
+    setInputValue(value);
 
     updatePosts(posts.filter((item) =>
       item.frontmatter.title.toLowerCase().includes(value.toLowerCase())

@@ -20,21 +20,22 @@ type Post = {
 const BlogList = ({ posts }) => {
   const [postsArray, setPostsArray] = useState(posts);
 
-  const updatePosts = (updatedArray) => {
+  const updatePosts = (updatedArray: Array<string>) => {
     setPostsArray(updatedArray)
   }
+
+  const results = postsArray.map((post: Post, index: number) => <Post post={post} key={index} />);
+  const content = results?.length ? results : <article><p>No Matching Posts!</p></article>
   return (
     <div className="container">
       <Link href="/" className="btn">Home</Link>
-      <Search posts={postsArray} updatePosts={updatePosts} />
+      <Search posts={posts} updatePosts={updatePosts} />
       <Head>
-        <title>List</title>
+        <title>Blog Posts</title>
       </Head>
 
       <div className="posts">
-        {postsArray.map((post: Post, index: number) => {
-          return <Post post={post} key={index} />
-        })}
+        {content}
       </div>
     </div>
   )
