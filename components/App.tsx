@@ -7,10 +7,10 @@ const navigation = {
   links: [
     { name: 'LinkedIn', to: 'https://www.linkedin.com/in/miller-johnston/' },
     { name: 'GitHub', to: 'https://github.com/MillerJ20' },
-    { name: 'Resume', to: '/assets/Miller Johnston SWE Resume(B).pdf'}, 
-    { name: 'Email', to: 'mailto: miller.johnston17@gmail.com'},
-    { name: 'About Me', to: '/About'},
-    { name: 'Blog Posts', to: '/BlogList'},
+    { name: 'Resume', to: '/assets/Miller Johnston SWE Resume-1.pdf' },
+    { name: 'Email', to: 'mailto: miller.johnston17@gmail.com' },
+    { name: 'About Me', to: '/About' },
+    { name: 'Blog Posts', to: '/BlogList' },
   ]
 };
 
@@ -24,8 +24,8 @@ function App() {
   const { brand, links } = navigation;
   return (
     <div className="App">
-      <Header brand={brand}/>
-        <Menu links={links} />
+      <Header brand={brand} />
+      <Menu links={links} />
     </div>
   );
 }
