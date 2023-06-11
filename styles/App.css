@@ -1,3 +1,5 @@
+@import "normalize.css";
+
 @font-face {
   font-family: GarrickBold;
   src: url(../public/Garrick\ Bold.ttf);
@@ -66,11 +68,19 @@ html {
 .posts {
   display: grid;
   grid-template-columns: repeat(3, 32%);
-  grid-template-rows: repeat(auto-fill, 30%);
+  grid-template-rows: auto auto 1fr;
   gap: 5vh 1vw;
   margin-top: 1vh;
 }
-
+@media (max-width: 1300px){
+  .posts{
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: auto auto 1fr;
+  gap: 3vh 1vw;
+  margin-top: 1vh;
+  }
+}
 .card {
   position: relative;
   padding: 15px;
@@ -78,6 +88,18 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: rgb(129,133,137);
   max-height: 75vh;
+  min-height: 25vh;
+}
+
+.card-small-screen{
+  position: relative;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(129,133,137);
+  max-height: 75vh;
+  min-height: 25vh;
+  font-size: 0.75em;
 }
 
 .card-page {
@@ -98,18 +120,29 @@ html {
   position: absolute;
   bottom: 28%
 }
-
+.card-title-small{
+  position: absolute;
+  bottom: 75%;
+}
 .card-date {
   position:absolute;
-  bottom: 26%;
+  bottom: 27%;
   background-color: rgb(129, 133, 137);
 }
-
+.card-date-small{
+  position: absolute;
+  bottom: 73%;
+  background-color: rgb(129, 133, 137);
+}
 .card-excerpt {
   position: absolute;
-  bottom: 10%
+  top: 72%
 }
-
+.card-excerpt-small{
+  position: absolute;
+  top: 25%;
+  padding-right: 5px;
+}
 .post-body ul,
 ol {
   font-size: 110%;
@@ -253,7 +286,6 @@ article h1 {
   text-shadow: 0px 0px 2px #444444;
   text-decoration: none;
   color: black;
-  text: black;
   width: 100vw;
   height: 100vh;
   background-color: gray;

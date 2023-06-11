@@ -26,6 +26,7 @@ const BlogList = ({ posts }) => {
 
   const results = postsArray.map((post: Post, index: number) => <Post post={post} key={index} />);
   const content = results?.length ? results : <article><p>No Matching Posts!</p></article>
+
   return (
     <div className="container">
       <Link href="/" className="btn">Home</Link>
