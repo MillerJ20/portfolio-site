@@ -1,11 +1,11 @@
 ---
-title: 'Make a React component responsive using conditional rendering'
+title: 'Make a responsive React Component'
 date: 'June 11 2023'
 excerpt: 'My journey making the BlogList responsive, with consistent styling across web browsers'
 cover_image: '/images/posts/react-3.png'
 ---
 
-The following blog post are my actual notes while addressing an issue I found with my website. What initially began as a journey to troubleshoot and debug styling inconsistencies between Firefox and Google Chrome turned into me finally making the BlogList page responsive to different screen sizes. The page was mostly created from top to bottom, so you can see the path follow out as I discovered new pieces of information, and the solution I ultimately went with. Enjoy!
+The following blog post contains my personal notes while addressing an issue I found with my website. What initially began as a journey to troubleshoot and debug styling inconsistencies between Firefox and Google Chrome turned into me finally making the BlogList page responsive to different screen sizes. The page was mostly created from top to bottom, so you can see the path follow out as I discovered new pieces of information, and the solution I ultimately went with. Enjoy!
 
 
 ## What I know
