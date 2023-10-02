@@ -1,3 +1,10 @@
+---
+title: 'I Want To Code Everything'
+date: 'October 1 2023'
+excerpt: 'A little venting session to get me back on track'
+cover_image: '/images/posts/dragonQuest.jpg'
+---
+
 This is meant to be an expression of the the inner dialogue web I have been finding myself tangled in. It will be a bit whiny but I figured I should let myself whine so that I can find the root of my frustrations and start working on a way to settle them. 
 
 I often find myself complaining about LinkedIn, taking issue with everything being an opportunity to boost productivity. And the doomerism, but neither of those things are exclusive to LinkedIn. It is easy to get wrapped up in it all, especially when it feels like the right post reaching the right eyes can change your life in big ways. I hope to break out of that mindset a bit here.
